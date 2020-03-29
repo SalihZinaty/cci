@@ -37,6 +37,7 @@ const sumLists = (l1,l2) =>{
         num2 = num2.next;
         isum = isum.next;
     }
+    if(res) sum.append(res);
     return sum;
 
 }
@@ -46,13 +47,7 @@ const addZeros = (l,num) => {
     }
 }
 
-const num1 = new LinkedList(2);
-num1.append(4);
-num1.append(3);
-num1.printList();
+const num1 = new LinkedList(5);
 const num2 = new LinkedList(5);
-num2.append(6);
-num2.append(4);
-num2.printList();
 const sum = sumLists(num1,num2);
 sum.printList();
