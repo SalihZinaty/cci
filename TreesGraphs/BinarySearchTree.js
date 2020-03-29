@@ -41,15 +41,5 @@ class BinarySearchTree {
         
     }
 }
-let tree = new BinarySearchTree();
-tree.insert(10);
-tree.insert(20);
-tree.insert(5);
-tree.insert(27);
-tree.insert(14);
-tree.insert(3);
-console.log(tree.lookup(2));
-console.log(tree.lookup(15));
-console.log(tree.lookup(-1));
-console.log(tree.lookup(1));
-console.log(tree.lookup(33));
+
+module.exports = BinarySearchTree;
