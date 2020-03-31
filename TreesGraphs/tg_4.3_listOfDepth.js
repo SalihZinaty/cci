@@ -21,6 +21,7 @@ const listOfDepth = (root) => {
     }
     return hash;
 }
+// modefied the BFS algorithm, added to the queue in addition to the current Node, a level argument
 const depthEmf = (queue,list) => {
     if(!queue.length) return list;
     let currNode = queue.shift();
